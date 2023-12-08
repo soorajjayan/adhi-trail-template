@@ -512,6 +512,14 @@ li::marker{
         padding: 0;
     }
     }
+@media (max-width: 428px){
+  .menu-wrapper {
+          padding: 0px;
+  }
+  .mobile-nav-toggle{
+    margin-left: -34px;
+  }
+  }
   
  /* main bottom section */
 .main-bottom{
