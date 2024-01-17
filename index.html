@@ -45,6 +45,7 @@
     <!-- <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" /> -->
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -52,7 +53,7 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
-      <div class="main-top">
+      <!-- <div class="main-top">
         <div class="container-fluid main-top-wrapper">
           <div>
             <i class="bi bi-telephone-fill white-color"></i
@@ -68,7 +69,7 @@
             <img src="assets/img/start-your-trail.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="container d-flex align-items-center justify-content-between menu-wrapper">
         <!-- <h1 class="logo"><a href="">Adhi</a></h1> -->
         <img src="assets/img/adhi-main-logo.png" class="img-fluid" alt="" />
@@ -87,8 +88,8 @@
             <li class="dropdown">
               <a href="#"><span>Success Stores</span></a>
             </li>
-            <li class="dropdown">
-              <a class="dark-color" href="#"><span>Resources</span></a>
+            <li class="dropdown drp">
+              <a class="dark-color" href="#" id="resources"><span id="sp">Resources</span></a>
             </li>
           </ul>
 
@@ -102,6 +103,36 @@
       </div>
     </header>
     <!-- End Header -->
+    <section class="main-bottom-section hide-and-show-bottom" data-aos="fade-up">
+      <div class="container main-bottom">
+        <ul>
+          <li class="dropdown main-top-commen-space">
+            <a class="light-gray-color dark-color blog-border" href="#"><span>Blogs</span></a>
+          </li>
+          <li class="dropdown main-top-commen-space">
+            <a class="light-gray-color dark-color light-border" href="#"
+              ><span>Real Estate Practice Quevstions</span></a
+            >
+          </li>
+          <li class="dropdown main-top-commen-space">
+            <a class="light-gray-color dark-color light-border" href="#"
+              ><span>How to get a Real Estate License</span></a
+            >
+          </li>
+          <li class="dropdown main-top-commen-space">
+            <a class="light-gray-color dark-color light-border" href="#"><span>How to Become a Broke</span></a>
+          </li>
+          <li class="dropdown main-top-commen-space">
+            <a class="light-gray-color dark-color light-border" href="#"><span>Real Estate FAQ</span></a>
+          </li>
+          <li class="dropdown main-top-commen-space">
+            <a class="light-gray-color dark-color light-border" href="#"
+              ><span>Should I Become a Real Estate Agent</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="hero-section">
       <div class="container" data-aos="fade-up">
         <div class="row hero-wrapper">
@@ -481,7 +512,7 @@
               <h3>Guest Pass</h3>
               <p>join a virtual class</p>
               <div class="dotted-border d-flex justify-content-center">
-                <h4 class="margin-top-20 font-28">$</h4>
+                <h4 class="margin-top-20 font-32">$</h4>
                 <h4>0</h4>
               </div>
               <ul class="pricing-list">
@@ -500,7 +531,7 @@
               <p>join a virtual class</p>
               <!-- <h4 class="white-dotted-border white-color">$0</h4> -->
               <div class="white-dotted-border d-flex justify-content-center">
-                <h4 class="margin-top-20 white-color font-28">$</h4>
+                <h4 class="margin-top-20 font-32 white-color">$</h4>
                 <h4 class="white-color">480</h4>
               </div>
               <ul class="pricing-list">
@@ -523,7 +554,7 @@
               <h3>Videos</h3>
               <p>Unlimited Access</p>
               <div class="dotted-border d-flex justify-content-center">
-                <h4 class="margin-top-20 font-28">$</h4>
+                <h4 class="margin-top-20 font-32">$</h4>
                 <h4>199</h4>
               </div>
               <ul class="pricing-list">

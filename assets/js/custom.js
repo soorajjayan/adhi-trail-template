@@ -23,4 +23,8 @@ $(document).ready(function () {
   } else {
     $(multipleCardCarousel).addClass("slide");
   }
+
+  $(".drp").click(function () {
+    $(".main-bottom-section").removeClass("d-none");
+  });
 });

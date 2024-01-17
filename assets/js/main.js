@@ -286,6 +286,10 @@
     });
   });
 
+  $("#resources").click(function () {
+    $(".main-bottom-section").toggleClass("hide-and-show-bottom");
+  });
+
   /**
    * Initiate Pure Counter
    */
