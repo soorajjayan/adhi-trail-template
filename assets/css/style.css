@@ -616,6 +616,7 @@ li::marker{
   }
   .main-bottom span{
     margin-left:20px;
+    font-size: 15px !important;
   }
   section.main-bottom-section{
     padding: 100px 0px 0px 0px;
