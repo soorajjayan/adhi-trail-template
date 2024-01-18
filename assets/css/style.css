@@ -338,6 +338,9 @@ section {
 .nav-top-buttons-login{
   background-color: #000000;
 }
+.nav-top-buttons-login:hover{
+  background-color: #000000 !important;
+}
 @media (max-width: 428px){
   .nav-top-buttons{
     flex-direction: column;
@@ -1146,7 +1149,7 @@ font-size: 30px;
 }
 .choose-us-img-wrapper{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .choose-us-img-wrapper .carousel-control-next-icon{
   display: none;
@@ -1156,6 +1159,7 @@ font-size: 30px;
 }
 .choose-us-img-wrapper .carousel-item {
   min-height: 850px;
+  margin-top: 20px;
 }
 .choose-us-points{
   margin-left: 20px;
@@ -1167,18 +1171,18 @@ font-size: 30px;
 }
 .choose-one {
   left: -2%;
-  top: 16%;
+  top: 0%;
 }
 .choose-two {
-  top: 17%;
+  top: 0%;
   left: 83%;
 }
 .choose-three {
-  bottom: 43%;
+  bottom: 64%;
   /* right: 90%; */
 }
 .choose-four {
-  bottom: 42%;
+  bottom: 64%;
   right: 8%;
 }
  @media (max-width: 1024px){
@@ -1217,7 +1221,7 @@ font-size: 30px;
   right: 82%;
 }
 .choose-four {
-  bottom: 46%;
+  bottom: 40%;
   left: 79%;
 }
  }
@@ -1385,7 +1389,7 @@ font-size: 30px;
 @media (max-width: 428px){
   
     .pricing{
-      margin-top: -500px;
+      margin-top: -450px;
     }
   
 }
