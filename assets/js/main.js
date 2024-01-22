@@ -287,7 +287,7 @@
   });
 
   $("#resources").click(function () {
-    $(".main-bottom-section").toggleClass("hide-and-show-bottom");
+    $(".main-bottom-section").slideToggle("hide-content");
   });
 
   /**
