@@ -698,7 +698,7 @@ li::marker{
   .main-bottom{
     height: auto;
     font-size: 14px;
-    padding-top: 20px;
+    padding-top: 40px;
   }
   .main-bottom ul {
     display: flex;
