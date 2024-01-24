@@ -869,7 +869,7 @@ border-radius: 24px;
 
 @media (max-width: 428px){
   .hero-img-wrapper img{
-  height: auto !important;
+  height: 292px !important;
   }
 }
 
@@ -1007,6 +1007,11 @@ font-size: 30px;
   border-radius: 50%;
  
 }
+@media (max-width: 428px){
+  .nav-button-label {
+   margin-left: 12px;
+  }
+}
 .how-it-work-section .nav-tabs .nav-link.active .nav-button-label{
   background-color: #da4b68;
 }
@@ -1045,7 +1050,8 @@ font-size: 30px;
 
 @media (max-width: 428px){
 .how-it-work-section .nav-link img{
-  width:18px  !important;
+  width:30px  !important;
+  height:20px !important;
 }
 .how-it-work-section .nav-link{
   padding: 0px;
