@@ -126,7 +126,7 @@ h5{
   color:#000000 !important;
 }
 .light-border{
-  border-left: 1px solid #f5f5f5;
+  border-left: 1px solid #EAEAEB;;
 }
 /* fonts */
 .font-15{
@@ -332,12 +332,14 @@ section {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+  padding: 0;
 }
 
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover>a 
+{
   color: black;
 }
 
@@ -644,7 +646,7 @@ li::marker{
   display: none;
  }
  .gradient-section{
-  background: radial-gradient(50% 50% at 50% 50%, #B9C1FE 0%, #FEB1C9 100%);
+  background: linear-gradient(180deg, #B9C1FE 0%, #FEB1C9 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   height:20px;
   
@@ -696,6 +698,8 @@ li::marker{
   display: flex;
   margin-right: 125px;
  }
+ 
+
  @media (max-width: 915px){
   .navbar-wrapper{
   margin-right: 0px;
@@ -713,8 +717,12 @@ li::marker{
     display: flex;
   }
   .main-bottom span{
-    margin-left:20px;
+    /* margin-left:20px; */
     font-size: 15px !important;
+    padding: 0px 10px;
+  }
+  .main-bottom a:hover {
+    color: #EC5171 !important;
   }
   section.main-bottom-section{
     padding: 100px 0px 0px 0px;
@@ -885,10 +893,16 @@ border-radius: 24px;
 }
 .social-media-wrapper .bi{
   color:#b7b7b7;
+  font-size: 22px;
+}
+@media (max-width: 428px){
+  .social-media-wrapper .bi{
+  font-size: 16px;
+  }
 }
 .hero-img-wrapper img{
   position: absolute;
-    top:0%;
+    top:26%;
     right: 23%;
 }
 
@@ -910,6 +924,9 @@ border-radius: 24px;
   top: 4%;
   right: 23%;
   }
+  .hero-img-wrapper img{
+  height: 528px;
+}
 }
 
 .hero-text-wrapper{
@@ -929,9 +946,9 @@ border-radius: 24px;
   font-size: 28px !important;
     }
 }
-.hero-img-wrapper img{
+/* .hero-img-wrapper img{
   height: 528px;
-}
+} */
 @media (max-width: 428px){
   .hero-text-wrapper,
   .hero-img-wrapper {
@@ -1363,9 +1380,17 @@ line-height: 28px; /* 175% */
 .section-tittle p{
   font-size: 26px;
 }
-.ssss img{
-  height: 567px !important;
-  /* width: 100% !important; */
+.slider-images-wrapper{
+  height: 577px;
+  margin-left: 40px;
+}
+.elements-wrapper{
+  height: 665px !important; 
+}
+@media (max-width: 428px){
+  .elements-wrapper{
+    height: auto !important;
+  }
 }
 /* why choose us section */
 @media (max-width: 428px){
@@ -1648,7 +1673,7 @@ margin: 0;
 }
 @media (max-width: 428px){
     .pricing ul li{
-      font-size: 12px;
+      font-size: 12px !important;
     }
   
   } 
