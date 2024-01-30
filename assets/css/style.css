@@ -126,7 +126,10 @@ h5{
   color:#000000 !important;
 }
 .light-border{
-  border-left: 1px solid #EAEAEB;;
+  border-left: 1px solid #EAEAEB;
+}
+.border-none{
+  border: none !important;
 }
 /* fonts */
 .font-15{
@@ -411,30 +414,58 @@ li::marker{
   display: block;
   position: absolute;
   left: 14px;
-  top: calc(100% + 30px);
+  /* top: calc(100% + 30px); */
   margin: 0;
-  padding: 10px 0;
+  padding: 0px 0px;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
+  /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
+  /* transition: top .30s ease-out; */
+  transition: top .3s ease-out;
+  /* transition: 0.3s; */
 }
 
-.navbar .dropdown ul li {
+/* .navbar .dropdown ul li {
   min-width: 200px;
-}
+} */
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  padding: 10px 5px;
   text-transform: none;
 }
+.drp-down-content li a span{
+  border-left: 1px solid #EAEAEB;
+  padding: 0px 12px;
+}
+@media (max-width: 1024px){
+  .drp-down-content li a span{
+    padding: 0px 6px;
+ }
+}
 
+@media (max-width: 1024px){
+  .navbar .dropdown ul a{
+    font-size: 12px !important;
+ }
+ .drp-down-content{
+  width: 2662px !important;
+ }
+}
+@media (max-width: 924px){
+  .drp-down-content{
+    width: 100% !important;
+  }
+}
+ @media (max-width: 924px){
+  .navbar .dropdown ul a{
+    font-size: 9px !important;
+ }
+ }
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
@@ -559,13 +590,29 @@ li::marker{
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
+@media (max-width: 924px){
+  .navbar-mobile .dropdown ul{
+    margin: 10px 0px;
+  }
+}
 
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
 }
+@media (max-width: 924px){
+.navbar-mobile .dropdown ul li{
+  min-width: auto;
+}
+}
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
+}
+
+@media (max-width: 924px){
+.navbar-mobile .dropdown ul a {
+    padding: 10px 10px;
+}
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -642,14 +689,23 @@ li::marker{
 
    /* main-bottom-section start */
    /* main bottom section */
- .hide-content{
-  display: none;
+   .drp-down-content {
+    width: 2580px;
+    left: -1544px !important;
+    text-align: center;
+    margin-top: 25px !important;
+}
+ .drp-down-content li{
+  display: inline-block;
+  /* width: 19%; 
+  margin-right: 1%;  */
+  text-align: center;
  }
  .gradient-section{
   /* background: linear-gradient(180deg, #B9C1FE 0%, #FEB1C9 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
-  background: rgb(185,193,254);
-  background: linear-gradient(90deg, rgba(185,193,254,1) 36%, rgba(238,174,202,1) 65%);
+background: rgb(185,193,254);
+background: linear-gradient(90deg, rgba(185,193,254,1) 36%, rgba(238,174,202,1) 65%);
   height:20px;
  }
  .main-bottom-section{
@@ -803,7 +859,7 @@ li::marker{
   position: relative;
   padding: 0;
   height: auto;
-  padding: 0px 0px 144px 0px;
+  padding: 0px 20px 144px 20px;
   margin-top: 74px;
 }
 .hero-wrapper{
@@ -973,7 +1029,7 @@ border-radius: 24px;
 }
 @media (max-width: 1024px){
   .social-media-wrapper{
-    left:94%;
+    left:95%;
   }
 }
 @media (max-width: 768px){
@@ -1751,7 +1807,11 @@ font-weight: 700;
 line-height: 120%; /* 43.2px */
 letter-spacing: 0.72px;
 }
-
+@media (max-width: 1024px){
+  .pricing .featured h3{
+    font-size: 34px;
+  }
+}
 .pricing .featured .get-started-btn {
   background: white;
   color:black;
@@ -2108,6 +2168,16 @@ section.form-section{
 section.footer-section{
   padding: 50px 0px 0px 0px;
 }
+@media (max-width: 1024px){
+  section.footer-section{
+    padding: 50px 20px 20px 20px;
+  }
+}
+@media (max-width: 1024px){
+  .footer-commen-space{
+    margin-top: 20px;
+  }
+}
 .footer-section{
   background-color: black;
 }
@@ -2156,9 +2226,10 @@ section.footer-section{
   border-bottom: 1px solid #80808036;
   padding: 14px 0px;
 }
-.copyright{
+.copyright p{
   display: flex;
   justify-content: center;
+  color: #333333;
 }
 .copyright p{
   font-size: 15px;

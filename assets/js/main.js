@@ -286,9 +286,9 @@
     });
   });
 
-  $("#resources").click(function () {
-    $(".main-bottom-section").slideToggle("hide-content");
-  });
+  // $("#resources").click(function () {
+  //   $(".main-bottom-section").slideToggle("hide-content");
+  // });
 
   /**
    * Initiate Pure Counter
