@@ -422,9 +422,8 @@ li::marker{
   visibility: hidden;
   background: #fff;
   /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
-  /* transition: top .30s ease-out; */
-  transition: top .3s ease-out;
-  /* transition: 0.3s; */
+  transition: 0.3s;
+  /* transition: opacity .4s ease-out; */
 }
 
 /* .navbar .dropdown ul li {
