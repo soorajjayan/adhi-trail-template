@@ -434,6 +434,9 @@ li::marker{
   padding: 10px 5px;
   text-transform: none;
 }
+.drp-down-content li a :hover{
+  color: #EC5171;
+}
 .drp-down-content li a span{
   border-left: 1px solid #EAEAEB;
   padding: 0px 12px;
