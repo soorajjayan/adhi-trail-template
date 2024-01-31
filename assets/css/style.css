@@ -2164,6 +2164,7 @@ section.form-section{
   height: auto;
 }
 /* footer-section-color  */
+
 section.footer-section{
   padding: 50px 0px 0px 0px;
 }
@@ -2224,6 +2225,9 @@ section.footer-section{
 .footer-wrapper{
   border-bottom: 1px solid #80808036;
   padding: 14px 0px;
+}
+.copyright{
+  padding-bottom: 10px;
 }
 .copyright p{
   display: flex;
