@@ -8,6 +8,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #444444;
+  position: relative;
 }
 
 a {
@@ -318,7 +319,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 16px;
+  font-size: 15px;
   color: #575753;
   white-space: nowrap;
   transition: 0.3s;
@@ -336,6 +337,10 @@ section {
   line-height: 0;
   margin-left: 5px;
   padding: 0;
+}
+
+.navbar li:hover>a{
+  color: #EC5171 !important;
 }
 
 .navbar a:hover,
@@ -414,13 +419,13 @@ li::marker{
   display: block;
   position: absolute;
   left: 14px;
-  /* top: calc(100% + 30px); */
   margin: 0;
   padding: 0px 0px;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
   background: #fff;
+  border-top: 1px solid rgba(217, 217, 217, 0.40);
   /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
   transition: 0.3s;
   /* transition: opacity .4s ease-out; */
@@ -431,15 +436,32 @@ li::marker{
 } */
 
 .navbar .dropdown ul a {
-  padding: 10px 5px;
+  padding: 25px 15px;
   text-transform: none;
 }
 .drp-down-content li a :hover{
   color: #EC5171;
 }
 .drp-down-content li a span{
-  border-left: 1px solid #EAEAEB;
+  /* border-left: 1px solid #EAEAEB; */
   padding: 0px 12px;
+}
+.left-light-border{
+
+line-height: 1px;
+}
+.left-light-border::after{
+  content: " ";
+  position: absolute;
+  top: 35%;
+  border-right: 1px solid #EAEAEB;
+  right: 0;
+  height: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.dropdown-last::after{
+  border-right: none !important;
 }
 @media (max-width: 1024px){
   .drp-down-content li a span{
@@ -471,7 +493,7 @@ li::marker{
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: black;
+  color: #EC5171;
 }
 
 .navbar .dropdown:hover>ul {
@@ -708,7 +730,8 @@ li::marker{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 background: rgb(185,193,254);
 background: linear-gradient(90deg, rgba(185,193,254,1) 36%, rgba(238,174,202,1) 65%);
-  height:20px;
+  height:30px;
+  border-top: 1px solid black;
  }
  .main-bottom-section{
   background-color: white;
@@ -944,6 +967,7 @@ border-radius: 24px;
   position: fixed;
   left: 97%;
   top: 30%;
+  /* right: 0; */
 }
 .social-media-box{
   height:48px;
@@ -1112,7 +1136,7 @@ line-height: 30.48px;
 .how-it-work-section p{
   color: #252430 !important;
   font-family: Poppins;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 175% */
@@ -1428,7 +1452,7 @@ font-size: 30px;
 .learn-section p{
 color: #FFF !important;
 font-family: Poppins;
-font-size: 16px;
+font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 28px; /* 175% */
@@ -1442,7 +1466,7 @@ line-height: 28px; /* 175% */
   margin-top: 25px;
 }
 .section-tittle p{
-  font-size: 26px;
+  font-size: 15px;
 }
 @media (max-width: 428px){
   .section-tittle  {
@@ -1493,6 +1517,33 @@ line-height: 28px; /* 175% */
   min-height: 850px;
   margin-top: 20px;
 }
+
+/* .carousel-item.active{
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;  
+  transform-style: preserve-3d;
+} */
+/* .carousel-item{
+  transition: none !important;
+} */
+.carousel-item {
+  transition: transform 2.6s ease-in-out;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity  2.6s;
+}
+/* @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+} */
 .choose-us-points{
   margin-left: 20px;
 }
@@ -1625,9 +1676,10 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.32px;
+font-size: 15px;
 }
 .choose-us-points p{
-  font-size: 16px;
+  font-size: 15px;
 }
 .why-choose-us-subhead{
 color: #191A15 !important;
@@ -1671,7 +1723,7 @@ letter-spacing: 0.8px;
 .pricing-subhead{
   color: #000 !important;
   font-family: Poppins;
-  font-size: 20px !important;
+  font-size: 15px !important;
   font-style: normal;
   font-weight: 400 !important;
   line-height: 30px;
@@ -1958,7 +2010,7 @@ letter-spacing: 0.42px;
 #image-caption{
 color: #8D8D8D;
 text-align: center;
-font-size: 21px;
+font-size: 21px !important;
 font-style: normal;
 font-weight: 400;
 line-height: 33px; /* 157.143% */
