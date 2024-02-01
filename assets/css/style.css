@@ -427,8 +427,7 @@ li::marker{
   background: #fff;
   border-top: 1px solid rgba(217, 217, 217, 0.40);
   /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
-  transition: 0.3s;
-  /* transition: opacity .4s ease-out; */
+
 }
 
 /* .navbar .dropdown ul li {
@@ -436,7 +435,7 @@ li::marker{
 } */
 
 .navbar .dropdown ul a {
-  padding: 25px 18px;
+  padding: 25px 2px;
   text-transform: none;
 }
 @media (max-width: 1024px){
@@ -451,8 +450,8 @@ li::marker{
   /* border-left: 1px solid #EAEAEB; */
   padding: 0px 12px;
 }
-.left-light-border{
 
+.left-light-border{
 line-height: 1px;
 }
 .left-light-border::after{
@@ -505,6 +504,9 @@ line-height: 1px;
   opacity: 1;
   top: 100%;
   visibility: visible;
+  transition-duration: 0.5s;
+transition-timing-function: ease-in;
+transition-delay: 0.3s;
 }
 
 .navbar .dropdown .dropdown ul {
@@ -517,7 +519,8 @@ line-height: 1px;
   opacity: 1;
   top: 0;
   left: 100%;
-  visibility: visible;
+  /* visibility: visible; */
+ 
 }
 
 @media (max-width: 1366px) {
@@ -723,6 +726,7 @@ line-height: 1px;
     left: -1544px !important;
     text-align: center;
     margin-top: 25px !important;
+    transition: opacity .2s ease-out;
 }
  .drp-down-content li{
   display: inline-block;
@@ -1531,6 +1535,7 @@ line-height: 28px; /* 175% */
   margin-top: 20px;
 }
 
+
 /* .carousel-item.active{
   opacity: 1;
 	animation-name: fadeInOpacity;
@@ -1542,16 +1547,30 @@ line-height: 28px; /* 175% */
 /* .carousel-item{
   transition: none !important;
 } */
- .carousel-item {
-  transition: transform 2.6s ease-in-out;
+.carousel-inner {
+  overflow: hidden;
 }
+ .carousel-item {
+  transition: transform 1.6s ease-in-out;
+ 
+}
+
+.carousel-fade .carousel-item.active {
+  transform: translateY(0%) !important;
+}
+
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  transition: opacity  2.6s;
+  transition: opacity  1.6s;
+  
 }
-.testimonials-section .carousel-item{
-  transition: transform 1.6s ease-in-out;
-}
+
+
+/* .testimonials-section .carousel-item{
+  transition: fadeInOpacity  1.6s  ease-in-out;
+} */
+
+
 /* @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
@@ -1560,6 +1579,17 @@ line-height: 28px; /* 175% */
 		opacity: 1;
 	}
 } */
+.nav-tabs-arrow{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+
+  -webkit-transition: transform 0.25s ease;
+    -o-transition: transform 0.25s ease;
+    transition: transform 0.25s ease;
+}
 .choose-us-points{
   margin-left: 20px;
 }

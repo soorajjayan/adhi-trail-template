@@ -285,6 +285,9 @@
       mirror: false,
     });
   });
+  $(".carousel").carousel({
+    interval: 3000,
+  });
 
   // $("#resources").click(function () {
   //   $(".main-bottom-section").slideToggle("hide-content");
