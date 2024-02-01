@@ -436,9 +436,14 @@ li::marker{
 } */
 
 .navbar .dropdown ul a {
-  padding: 25px 15px;
+  padding: 25px 18px;
   text-transform: none;
 }
+@media (max-width: 1024px){
+  .navbar .dropdown ul a{
+    padding: 25px 2px
+ }
+ }
 .drp-down-content li a :hover{
   color: #EC5171;
 }
