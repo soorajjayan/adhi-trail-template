@@ -895,6 +895,14 @@ background: linear-gradient(90deg, rgba(185,193,254,1) 36%, rgba(238,174,202,1) 
     right: initial !important;
     left: 305px;
 }
+.start-learning{
+  margin-top: 24px;
+}
+@media (max-width: 1024px){
+  .start-learning {
+   margin-top: 0px;
+  }
+}
 .hero-first-head{
 color: #FFF;
 font-family: Poppins;
@@ -1529,12 +1537,15 @@ line-height: 28px; /* 175% */
 /* .carousel-item{
   transition: none !important;
 } */
-.carousel-item {
+ .carousel-item {
   transition: transform 2.6s ease-in-out;
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
   transition: opacity  2.6s;
+}
+.testimonials-section .carousel-item{
+  transition: transform 1.6s ease-in-out;
 }
 /* @keyframes fadeInOpacity {
 	0% {
