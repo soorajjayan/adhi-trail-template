@@ -288,7 +288,8 @@
   $(".carousel").carousel({
     interval: 3000,
   });
-
+  // bolg read more  script
+  
   // $("#resources").click(function () {
   //   $(".main-bottom-section").slideToggle("hide-content");
   // });
