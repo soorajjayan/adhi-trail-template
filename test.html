@@ -3,55 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
     <style>
-      .showmore {
-        font-size: 1.1em;
-        margin-top: 1.5em;
+      /* Style for the container */
+      .image-container {
+        position: relative;
+        display: inline-block;
       }
 
-      .showmore .more,
-      .showmore.show .dots {
+      /* Style for the hidden list */
+      .hidden-list {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        list-style: none;
+        margin: 0;
       }
 
-      .showmore.show .more {
-        display: inline;
-      }
-
-      .showmore a {
+      /* Style for list items */
+      .hidden-list li {
         cursor: pointer;
-        display: block;
-        margin-top: 0.5em;
-        margin-bottom: 1em;
-        font-weight: bold;
+        padding: 5px;
+      }
+
+      /* Style for list items on hover */
+      .hidden-list li:hover {
+        background-color: #f0f0f0;
       }
     </style>
   </head>
   <body>
-    <p class="showmore">
-      This is Lorem Ipsum. This is Lorem Ipsum. <span class="dots">...</span
-      ><span class="more"> This is the hidden text. This is the hidden text. </span>
-      <a>Show More</a>
-    </p>
+    <!-- Image container with hidden list -->
+    <div class="image-container d-flex" onmouseover="showList()" onmouseout="hideList()">
+      <img src="your-image-source.jpg" alt="Your Image" />
 
-    <p class="showmore">
-      And here is a second paragraph. <span class="dots">...</span
-      ><span class="more"> This is the hidden text. This is the hidden text. </span>
-      <a>Show More</a>
-    </p>
+      <!-- Hidden unordered list -->
+      <ul class="hidden-list" id="hiddenList">
+        <li onclick="selectItem('Item 1')">Item 1</li>
+        <li onclick="selectItem('Item 2')">Item 2</li>
+        <li onclick="selectItem('Item 3')">Item 3</li>
+      </ul>
+    </div>
+
     <script>
-      document.querySelectorAll(".showmore").forEach(function (p) {
-        p.querySelector("a").addEventListener("click", function () {
-          p.classList.toggle("show");
-          this.textContent = p.classList.contains("show") ? "Show Less" : "Show More";
-        });
-      });
+      // Function to show the hidden list
+      function showList() {
+        document.getElementById("hiddenList").style.display = "block";
+      }
+
+      // Function to hide the hidden list
+      function hideList() {
+        document.getElementById("hiddenList").style.display = "none";
+      }
+
+      // Function to handle item selection
+      function selectItem(item) {
+        alert("Selected: " + item);
+      }
     </script>
   </body>
 </html>
