@@ -2749,6 +2749,7 @@ section.footer-section{
 .contact-texts{
   display: flex;
   justify-content: space-between;
+  margin-top: 90px;
 }
 .contact-texts p{
   font-size: 29px;
@@ -3369,3 +3370,46 @@ margin-top: 30px;
     width: 1920px;
   }
 } */
+
+.slider-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider-section h3{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.4px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+.slider-section p{
+  font-size: 24px;
+  font-weight: 700;
+  color:#EC5171;
+  margin-top: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+.slider-section img{
+  margin-top: 30px;
+}
+.profile-name p{
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+}
+.profile-sec-name p{
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+.profile-sec-name p{
+  font-weight: 300;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: -20px;
+}
