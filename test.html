@@ -3,67 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      /* Style for the container */
-      .image-container {
-        position: relative;
-        display: inline-block;
-      }
-
-      /* Style for the hidden list */
-      .hidden-list {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        list-style: none;
-        margin: 0;
-      }
-
-      /* Style for list items */
-      .hidden-list li {
-        cursor: pointer;
-        padding: 5px;
-      }
-
-      /* Style for list items on hover */
-      .hidden-list li:hover {
-        background-color: #f0f0f0;
-      }
-    </style>
+    <title>Bootstrap Modal on Page Load</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Image container with hidden list -->
-    <div class="image-container d-flex" onmouseover="showList()" onmouseout="hideList()">
-      <img src="your-image-source.jpg" alt="Your Image" />
-
-      <!-- Hidden unordered list -->
-      <ul class="hidden-list" id="hiddenList">
-        <li onclick="selectItem('Item 1')">Item 1</li>
-        <li onclick="selectItem('Item 2')">Item 2</li>
-        <li onclick="selectItem('Item 3')">Item 3</li>
-      </ul>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">This is a Bootstrap modal that opens on page load.</div>
+        </div>
+      </div>
     </div>
 
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
     <script>
-      // Function to show the hidden list
-      function showList() {
-        document.getElementById("hiddenList").style.display = "block";
-      }
-
-      // Function to hide the hidden list
-      function hideList() {
-        document.getElementById("hiddenList").style.display = "none";
-      }
-
-      // Function to handle item selection
-      function selectItem(item) {
-        alert("Selected: " + item);
-      }
+      // Trigger the modal on page load
+      window.onload = function () {
+        var myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+        myModal.show();
+      };
     </script>
   </body>
 </html>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <section class="dark-bg form-section license-form-section">
+          <div class="container" data-aos="fade-up">
+            <div class="form-head">
+              <h3 class="white-color font-weight-600">I'd like to learn more about getting my real estate license,</h3>
+              <h3 class="white-color font-weight-600">enter your information below to try out our program.</h3>
+            </div>
+            <div>
+              <form
+                action="https://www.adhischools.com/#"
+                id="license_info_form"
+                class="text-center"
+                method="post"
+                accept-charset="utf-8"
+              >
+                <input type="hidden" name="csrf_token" value="b02e5cc90fc2c34a198408549c2aa88e" />
+                <div class="valid_msgs"></div>
+                <p class="margin-top-10" style="visibility: visible">
+                  <span class="quote">"</span>
+                  Hello, my name is
+                  <input type="text" value="" placeholder="Name" name="" id="" autocomplete="off" />
+                  and I'd like to get more information on real estate classes.
+                </p>
+                <p class="wow animated" style="visibility: visible">
+                  Please send me information to
+                  <input type="text" value="" placeholder="Email" name="" id="" />
+                </p>
+                <p class="wow animated" style="visibility: visible">
+                  Enter your
+                  <input type="text" value="" placeholder="Phone number" name="" id="" maxlength="15" />
+                  to verify you are a real person
+                  <span class="quote">"</span>
+                  <span class="visible-xs visible-sm"><br /></span>
+                  <!--span style="font-size: 11px;color: lightgray;">Text messaging rates may apply</span-->
+                </p>
+
+                <p class="otp_div" style="display: none">
+                  Enter Code Received On Your Email
+                  <input type="text" value="" placeholder="Code" name="" id="" />
+                  <span class="quote">"</span>
+                </p>
+                <div class="submit button-hover">
+                  <input type="submit" id="" value="SUBMIT" name="submit" style="visibility: visible" />
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </form>
+              <div class="d-flex justify-content-center margin-top-35 padding-bottom-20 form-img">
+                <img src="assets/img/interested.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="container getlicense-container">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="assets/img/passed-img.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col-md-9 modal-para">
+                  <p>"Hey guys,</p>
+                  <p>
+                    I took the exam today and passed!!!!<br />
+                    It only took me one try which was one of my goals. I took the online <br />
+                    classes and follow your suggestions so I took the crash course,<br />
+                    used the crash course app a lot, took 7 mock tests and went<br />
+                    confident to present the exam. Thank you for the great job you are<br />
+                    doing, you guys are awesome!!!! May God continue to bless you!"
+                  </p>
+                  <p>Willie V.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
