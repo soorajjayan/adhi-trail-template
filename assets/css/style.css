@@ -1124,7 +1124,7 @@ line-height: 107.5%;
 }
 @media (max-width: 428px){
   .hero-section{
-    padding: 0px 0px 144px 0px;
+    padding: 0px 0px 144px 0px !important;
   }
   
 }
@@ -1191,6 +1191,11 @@ width: 307px;
   top: 30%;
   right: 0;
 }
+/* @media (max-width: 320px){
+  .social-media-box{
+    margin-left: 0px !important;
+  }
+} */
 .social-media-box{
   height:48px;
   width:48px;
@@ -1224,6 +1229,15 @@ img.slider-main-img{
     top:20%;
     right: -4%;
     height: 500px;
+    width: 820px;
+    right: 0;
+}
+@media (max-width: 320px){
+  .social-media-wrapper .bi{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  }
 }
 
 @media (max-width: 428px){
@@ -1250,7 +1264,13 @@ img.slider-main-img{
   /* right: 23%; */
   }
   img.slider-main-img{
-  height: 528px;
+  height: 430px;
+}
+.base-frame-sec{
+  bottom: 74px;
+}
+.hero-section{
+  padding: 20px 20px 80px 20px;
 }
 }
 
@@ -4442,4 +4462,44 @@ section.getmylicence-youtube-section{
 .online-classes .row{
   --bs-gutter-x:3.5rem;
 }
+.social-right-arrow-wrapper {
+  position: fixed;
+  top:59%;
+  left:91%;
+  font-size: 50px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  color: #b7b7b7;
 
+}
+.close-intro{
+  display: none;
+}
+.social-right-arrow-wrapper .bi-arrow-right-short{
+  top: -70%;
+    position: absolute;
+    left: -46%;
+}
+.social-right-arrow-wrapper .bi-arrow-left-short{
+  top: -70%;
+    position: absolute;
+    left: -46%;
+}
+@media (min-width: 428px){
+ .social-media-wrapper-sm{
+  display: none;
+  
+ }
+}
+@media (max-width: 428px){
+  .social-media-wrapper-lg{
+   display: none;
+  }
+ }
+ .social-media-wrapper-sm{
+  left: 98%;
+ }
+ /* #intro-wrap{
+  display: none;
+ } */
