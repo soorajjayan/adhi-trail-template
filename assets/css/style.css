@@ -4650,5 +4650,8 @@ display: flex;
   padding-bottom: 0px;
 }
 .modal-header button.btn-close{
-  margin-top: 8px !important;
+  margin-top: 47px !important;
+}
+.modal-header .btn-close:focus{
+  box-shadow: none !important;
 }
