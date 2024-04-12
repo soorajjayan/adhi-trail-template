@@ -70,7 +70,7 @@ url("./fonts/bootstrap-icons.woff?2820a3852bdb9a5832199cc61cec4e65") format("wof
 .bi-arrow-left-circle-fill::before { content: "\f129"; }
 .bi-arrow-left-circle::before { content: "\f12a"; }
 .bi-arrow-left-right::before { content: "\f12b"; }
-.bi-arrow-left-short::before { content: "\f12c"; }
+.bi-chevron-left::before { content: "\f12c"; }
 .bi-arrow-left-square-fill::before { content: "\f12d"; }
 .bi-arrow-left-square::before { content: "\f12e"; }
 .bi-arrow-left::before { content: "\f12f"; }
@@ -79,7 +79,7 @@ url("./fonts/bootstrap-icons.woff?2820a3852bdb9a5832199cc61cec4e65") format("wof
 .bi-arrow-return-right::before { content: "\f132"; }
 .bi-arrow-right-circle-fill::before { content: "\f133"; }
 .bi-arrow-right-circle::before { content: "\f134"; }
-.bi-arrow-right-short::before { content: "\f135"; }
+.bi-chevron-right::before { content: "\f135"; }
 .bi-arrow-right-square-fill::before { content: "\f136"; }
 .bi-arrow-right-square::before { content: "\f137"; }
 .bi-arrow-right::before { content: "\f138"; }
